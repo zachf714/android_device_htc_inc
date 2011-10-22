@@ -56,5 +56,6 @@ ro.HorizontalBUA = true
 ro.ril.enable.prl.recognition = 1
 
 ro.additionalmounts=/mnt/emmc
+ro.vold.switchablepair=/mnt/sdcard,/mnt/emmc
 
 ro.opengles.version=131072
