@@ -97,9 +97,6 @@ PRODUCT_PACKAGES += \
 # we have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
 
-# Incredible uses high-density artwork where available
-PRODUCT_LOCALES += hdpi
-
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 LOCAL_KERNEL := device/htc/inc/kernel
 else
@@ -116,6 +113,8 @@ $(call inherit-product, device/htc/common/common.mk)
 
 $(call inherit-product, build/target/product/full_base.mk)
 
+# Incredible uses high-density artwork where available
+PRODUCT_LOCALES += hdpi
 
 PRODUCT_NAME := full_inc
 PRODUCT_DEVICE := inc
