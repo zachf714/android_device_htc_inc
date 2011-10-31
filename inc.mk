@@ -28,25 +28,18 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product-if-exists, vendor/htc/inc/inc-vendor.mk)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-	ro.com.android.wifi-watchlist=GoogleGuest \
 	ro.error.receiver.system.apps=com.google.android.feedback \
-	ro.setupwizard.enterprise_mode=1 \
 	ro.com.google.clientidbase=android-verizon \
 	ro.com.google.locationfeatures=1 \
-	ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
-	ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
-	ro.cdma.home.operator.numeric=310004 \
 	ro.cdma.home.operator.alpha=Verizon \
+	ro.cdma.home.operator.numeric=310012 \
 	ro.cdma.homesystem=64,65,76,77,78,79,80,81,82,83 \
 	ro.cdma.data_retry_config=default_randomization=2000,0,0,120000,180000,540000,960000 \
 	ro.config.vc_call_vol_steps=7 \
 	ro.cdma.otaspnumschema=SELC,1,80,99 \
 	ro.telephony.call_ring.multiple=false \
 	ro.telephony.call_ring.delay=3000 \
-	ro.url.safetylegal=http://www.htc.com/staticfiles/Support/legal/?model=A855 \
 	ro.setupwizard.enable_bypass=1 \
-	dalvik.vm.lockprof.threshold=500 \
-	dalvik.vm.dexopt-flags=m=y \
 	ro.media.dec.jpeg.memcap=20000000 \
 	ro.media.enc.jpeg.quality=95,85,70
 
@@ -59,7 +52,7 @@ DEVICE_PACKAGE_OVERLAYS += device/htc/inc/overlay
 PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
     frameworks/base/data/etc/android.hardware.camera.flash-autofocus.xml:system/etc/permissions/android.hardware.camera.flash-autofocus.xml \
-    frameworks/base/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
+    frameworks/base/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml \
     frameworks/base/data/etc/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml \
     frameworks/base/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
     frameworks/base/data/etc/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml \
@@ -72,9 +65,7 @@ PRODUCT_COPY_FILES += \
 
 # Firmware
 PRODUCT_COPY_FILES += \
-    device/htc/inc/firmware/bcm4329.hcd:system/etc/firmware/bcm4329.hcd \
-    device/htc/inc/firmware/fw_bcm4329.bin:system/etc/firmware/fw_bcm4329.bin \
-    device/htc/inc/firmware/fw_bcm4329_apsta.bin:system/etc/firmware/fw_bcm4329_apsta.bin
+    device/htc/inc/firmware/bcm4329.hcd:system/etc/firmware/bcm4329.hcd
 
 PRODUCT_COPY_FILES += \
     device/htc/inc/vold.fstab:system/etc/vold.fstab \
