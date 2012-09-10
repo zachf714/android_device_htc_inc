@@ -1,5 +1,5 @@
 #
-# system.prop for device
+# system.prop for inc
 #
 
 rild.libpath=/system/lib/libhtc_ril.so
