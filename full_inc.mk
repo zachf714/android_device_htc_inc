@@ -104,7 +104,8 @@ endif
 PRODUCT_PACKAGES += \
     gps.inc \
     lights.inc \
-    sensors.inc
+    sensors.inc \
+    Torch
 
 # USB
 ADDITIONAL_DEFAULT_PROPERTIES += \
@@ -122,6 +123,9 @@ $(call inherit-product-if-exists, vendor/htc/inc/inc-vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 
-PRODUCT_NAME := full_inc
+# Set these variables here to overwrite any inherited values.
 PRODUCT_DEVICE := inc
-PRODUCT_MODEL := Full Android on Inc
+PRODUCT_NAME := cm_inc
+PRODUCT_BRAND := HTC
+PRODUCT_MODEL := ADR6300
+PRODUCT_MANUFACTURER := HTC
