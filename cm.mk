@@ -1,6 +1,9 @@
 # Specify phone tech before including full_phone
 $(call inherit-product, vendor/cm/config/cdma.mk)
 
+# Inherit some common CM stuff, but the smaller version
+$(call inherit-product, vendor/cm/config/common_mini_phone.mk)
+
 # Release name
 PRODUCT_RELEASE_NAME := inc
 
@@ -8,8 +11,8 @@ PRODUCT_RELEASE_NAME := inc
 TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 480
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Grab the smaller languages to save space
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_small.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/htc/inc/full_inc.mk)
@@ -17,7 +20,7 @@ $(call inherit-product, device/htc/inc/full_inc.mk)
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := inc
 PRODUCT_NAME := cm_inc
-PRODUCT_BRAND := HTC
+PRODUCT_BRAND := verizon_wwe
 PRODUCT_MODEL := ADR6300
 PRODUCT_MANUFACTURER := HTC
 
