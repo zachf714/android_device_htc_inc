@@ -125,7 +125,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Set these variables here to overwrite any inherited values.
 PRODUCT_DEVICE := inc
-PRODUCT_NAME := cm_inc
-PRODUCT_BRAND := HTC
+PRODUCT_NAME := inc
+PRODUCT_BRAND := verizon_wwe
 PRODUCT_MODEL := ADR6300
 PRODUCT_MANUFACTURER := HTC
