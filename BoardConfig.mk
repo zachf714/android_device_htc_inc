@@ -30,8 +30,10 @@ USE_CAMERA_STUB := false
 # inherit common defines for all qsd8k devices
 include device/htc/qsd8k-common/BoardConfigCommon.mk
 
-# Override qsd8k-common/BoardConfigCommon.mk
-TARGET_KERNEL_SOURCE := kernel/htc/incredikernel
+# Override qsd8k-common/BoardConfigCommon.mk to use incredikernel
+#TARGET_KERNEL_SOURCE := kernel/htc/incredikernel
+# Use the precompiled kernel
+TARGET_KERNEL_SOURCE :=
 # Override kernel toolchain. (4.6 is too unstable)
 ifeq ($(LINARO_BUILD),)
 KERNEL_TOOLCHAIN_PREFIX:=$(ANDROID_BUILD_TOP)/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-
