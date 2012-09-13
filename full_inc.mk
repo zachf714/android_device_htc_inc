@@ -121,10 +121,7 @@ $(call inherit-product, device/htc/qsd8k-common/qsd8k.mk)
 $(call inherit-product-if-exists, vendor/htc/inc/inc-vendor.mk)
 
 # Cutting it out due to limited system partition
-# $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-
-# Grab the smaller telephony set
-$(call inherit-product, $(SRC_TARGET_DIR)/product/generic.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Set these variables here to overwrite any inherited values.
 PRODUCT_DEVICE := inc

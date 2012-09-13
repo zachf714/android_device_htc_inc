@@ -2,7 +2,7 @@
 $(call inherit-product, vendor/cm/config/cdma.mk)
 
 # Inherit some common CM stuff, but the smaller version
-$(call inherit-product, vendor/cm/config/common_mini_phone.mk)
+$(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := inc
@@ -10,9 +10,6 @@ PRODUCT_RELEASE_NAME := inc
 # Boot animation
 TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 480
-
-# Grab the smaller languages to save space
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_small.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/htc/inc/full_inc.mk)
