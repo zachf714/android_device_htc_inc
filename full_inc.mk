@@ -75,8 +75,8 @@ PRODUCT_COPY_FILES += \
     device/htc/inc/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml
 
 # APN list
-PRODUCT_COPY_FILES += \
-    device/htc/inc/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
+#PRODUCT_COPY_FILES += \
+#    device/htc/inc/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 # Firmware
 PRODUCT_COPY_FILES += \
