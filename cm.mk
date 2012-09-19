@@ -2,7 +2,7 @@
 $(call inherit-product, vendor/cm/config/cdma.mk)
 
 # Inherit some common CM stuff, but the smaller version
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/cm/config/common_mini_phone.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := inc
