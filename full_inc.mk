@@ -105,6 +105,8 @@ PRODUCT_PACKAGES += \
     gps.inc \
     lights.inc \
     sensors.inc \
+
+PRODUCT_PACKAGES += \
     Torch
 
 # USB
