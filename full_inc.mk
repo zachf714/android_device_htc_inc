@@ -127,7 +127,9 @@ $(call inherit-product-if-exists, vendor/htc/inc/inc-vendor.mk)
 # Use generic instead of full_base_telephony (smaller)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic.mk)
 # Get a list of languages (only the small set)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_small.mk)
+#$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_small.mk)
+# Get a full list of languages
+$(call inherit-product, $(SRC_TARGET_DIR)/product/locales_full.mk)
 
 # Set these variables here to overwrite any inherited values.
 PRODUCT_DEVICE := inc
