@@ -106,6 +106,7 @@ PRODUCT_PACKAGES += \
     lights.inc \
     sensors.inc \
 
+# Call the Torch.apk
 PRODUCT_PACKAGES += \
     Torch
 
@@ -122,12 +123,8 @@ $(call inherit-product, device/htc/qsd8k-common/qsd8k.mk)
 
 $(call inherit-product-if-exists, vendor/htc/inc/inc-vendor.mk)
 
-# Cutting it out due to limited system partition
-#$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Use generic instead of full_base_telephony (smaller)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic.mk)
-# Get a list of languages (only the small set)
-#$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_small.mk)
 # Get a full list of languages
 $(call inherit-product, $(SRC_TARGET_DIR)/product/locales_full.mk)
 
@@ -139,12 +136,10 @@ PRODUCT_MODEL := ADR6300
 PRODUCT_MANUFACTURER := HTC
 
 # Goo Manager support
-ifeq ($(CM_BUILDTYPE),UNOFFICIAL)
-    CM_BUILDTYPE := PONS
-    CM_VERSION := $(PRODUCT_VERSION_MAJOR)-$(shell date -u +%Y%m%d)-$(CM_BUILDTYPE)-$(CM_BUILD)$(CM_EXTRAVERSION)
-    PRODUCT_PROPERTY_OVERRIDES += \
-      ro.modversion=CyanogenMod-$(CMVERSION) \
-      ro.goo.developerid=PonsAsinorem \
-      ro.goo.rom=CM$(PRODUCT_VERSION_MAJOR)$(CM_BUILDTYPE)$(CM_BUILD) \
-      ro.goo.version=$(shell date +%s)
-endif
+CM_BUILDTYPE := PONS
+CM_VERSION := $(PRODUCT_VERSION_MAJOR)-$(shell date -u +%Y%m%d)-$(CM_BUILDTYPE)-$(CM_BUILD)$(CM_EXTRAVERSION)
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.modversion=CyanogenMod-$(CMVERSION) \
+ro.goo.developerid=PonsAsinorem \
+ro.goo.rom=CM$(PRODUCT_VERSION_MAJOR)$(CM_BUILDTYPE)$(CM_BUILD) \
+ro.goo.version=$(shell date +%s)
