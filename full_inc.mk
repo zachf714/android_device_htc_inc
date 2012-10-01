@@ -143,3 +143,6 @@ ro.modversion=CyanogenMod-$(CMVERSION) \
 ro.goo.developerid=PonsAsinorem \
 ro.goo.rom=CM$(PRODUCT_VERSION_MAJOR)$(CM_BUILDTYPE)$(CM_BUILD) \
 ro.goo.version=$(shell date +%s)
+
+PRODUCT_COPY_FILES +=  \
+    vendor/cm/proprietary/GooManager.apk:system/app/GooManager.apk
