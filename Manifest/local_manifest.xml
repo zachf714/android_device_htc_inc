@@ -37,7 +37,7 @@
   <!--remove-project name="CyanogenMod/android_packages_apps_Calculator" path="packages/apps/Calculator" /-->
   <remove-project name="CyanogenMod/android_packages_apps_CMUpdater" path="packages/apps/CMUpdater" />
   <remove-project name="CyanogenMod/android_packages_apps_CMWallpapers" path="packages/apps/CMWallpapers" />
-  <remove-project name="CyanogenMod/android_packages_apps_DSPManager" path="packages/apps/DSPManager" />
+  <!--remove-project name="CyanogenMod/android_packages_apps_DSPManager" path="packages/apps/DSPManager" /-->
   <remove-project name="CyanogenMod/android_packages_apps_Music" path="packages/apps/Music" />
   <remove-project name="CyanogenMod/android_packages_apps_MusicFX" path="packages/apps/MusicFX" />
   <remove-project name="CyanogenMod/android_packages_apps_Nfc" path="packages/apps/Nfc" />
