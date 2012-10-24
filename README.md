@@ -28,17 +28,6 @@ repo sync -j16
 ```
 NOTE: This WILL take a long time.
 
-### Revert commits that break the build for the inc
-```bash
-cd ~/cm10/hardware/qcom/display
-# Revert "hwc/overlay: Add premultiplied alpha support."
-git revert 89770608f0 --no-edit
-# Revert "hwc: Set premultiplied alpha flag appropriately"
-git revert 5fcbecb --no-edit
-# Revert "hwc: Enable MDP_BACKEND_COMPOSITION"
-git revert 48bcc28 --no-edit
-```
-
 ### Build
 Make sure we're in ~/cm10...
 ```bash
