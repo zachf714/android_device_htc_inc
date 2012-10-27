@@ -125,6 +125,9 @@ PRODUCT_COPY_FILES += \
 # Set dirty_ratio for UMS
 PRODUCT_PROPERTY_OVERRIDES += ro.vold.umsdirtyratio=20
 
+# Common qsd8k stuff
+$(call inherit-product, device/htc/qsd8k-common/qsd8k.mk)
+
 # Vendor file
 $(call inherit-product-if-exists, vendor/htc/inc/inc-vendor.mk)
 
