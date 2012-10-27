@@ -119,7 +119,7 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
     persist.service.adb.enable=1
 
 # Init post-boot script
-PRODUCT_COPY_FILES := \
+PRODUCT_COPY_FILES += \
     device/htc/inc/prebuilt/etc/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh
 
 # Set dirty_ratio for UMS
