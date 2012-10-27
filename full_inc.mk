@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# Common qsd8k stuff
+$(call inherit-product, device/htc/qsd8k-common/qsd8k.mk)
+
 # Overlay
 DEVICE_PACKAGE_OVERLAYS := device/htc/inc/overlay
 
@@ -117,9 +120,6 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
 
 # Set dirty_ratio for UMS
 PRODUCT_PROPERTY_OVERRIDES += ro.vold.umsdirtyratio=20
-
-# Common qsd8k stuff
-$(call inherit-product, device/htc/qsd8k-common/qsd8k.mk)
 
 $(call inherit-product-if-exists, vendor/htc/inc/inc-vendor.mk)
 
