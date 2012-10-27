@@ -14,9 +14,6 @@
 # limitations under the License.
 #
 
-# Common qsd8k stuff
-$(call inherit-product, device/htc/qsd8k-common/qsd8k.mk)
-
 # Overlay
 DEVICE_PACKAGE_OVERLAYS := device/htc/inc/overlay
 
