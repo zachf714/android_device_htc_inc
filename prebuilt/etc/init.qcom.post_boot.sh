@@ -4,10 +4,10 @@
 #
 #
 #
-target=`getprop ro.board.platform`
+target=`getprop ro.board.board`
 case "$target" in
-    # QSD8x50: Passion, Bravo, Supersonic, Inc
-    "qsd8k")
+    # Inc
+    "inc")
         # Tune for scorpion
         echo 245000 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
         echo 998400 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
