@@ -121,6 +121,7 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
 # Set dirty_ratio for UMS
 PRODUCT_PROPERTY_OVERRIDES += ro.vold.umsdirtyratio=20
 
+# Vendor file
 $(call inherit-product-if-exists, vendor/htc/inc/inc-vendor.mk)
 
 # Use generic instead of full_base_telephony (smaller)
