@@ -1,0 +1,4 @@
+modelid: PB3120000
+cidnum: VZW__001
+mainver: 3.17.605.0
+hbootpreupdate:3
