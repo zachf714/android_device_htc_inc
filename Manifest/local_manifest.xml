@@ -16,9 +16,6 @@
   <remove-project name="CyanogenMod/android_hardware_qcom_gps" path="hardware/qcom/gps" />
   <project name="Evervolv/android_hardware_qcom_gps" path="hardware/qcom/gps" />
 
-  <remove-project name="CyanogenMod/android_hardware_qcom_media" path="hardware/qcom/media" />
-  <project name="Evervolv/android_hardware_qcom_media" path="hardware/qcom/media" />
-
   <remove-project name="CyanogenMod/android_hardware_ril" path="hardware/ril" />
   <project name="Evervolv/android_hardware_ril" path="hardware/ril" />
 
