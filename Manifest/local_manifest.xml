@@ -29,12 +29,8 @@
   <project name="PonsAsinorem/android_vendor_cm" path="vendor/cm" />
 
   <!--Removed-->
-  <remove-project name="CyanogenMod/android_packages_apps_Apollo" path="packages/apps/Apollo" />
-  <!--Currently Superuser depends on Calculator for some reason. I haven't removed the dependency yet-->
-  <!--remove-project name="CyanogenMod/android_packages_apps_Calculator" path="packages/apps/Calculator" /-->
   <remove-project name="CyanogenMod/android_packages_apps_CMUpdater" path="packages/apps/CMUpdater" />
   <remove-project name="CyanogenMod/android_packages_apps_CMWallpapers" path="packages/apps/CMWallpapers" />
-  <!--remove-project name="CyanogenMod/android_packages_apps_DSPManager" path="packages/apps/DSPManager" /-->
   <remove-project name="CyanogenMod/android_packages_apps_Music" path="packages/apps/Music" />
   <remove-project name="CyanogenMod/android_packages_apps_MusicFX" path="packages/apps/MusicFX" />
   <remove-project name="CyanogenMod/android_packages_apps_Nfc" path="packages/apps/Nfc" />
@@ -45,7 +41,6 @@
   <remove-project name="CyanogenMod/android_packages_wallpapers_Basic" path="packages/wallpapers/Basic" />
   <remove-project name="CyanogenMod/android_packages_wallpapers_Galaxy4" path="packages/wallpapers/Galaxy4" />
   <remove-project name="CyanogenMod/android_packages_wallpapers_HoloSpiral" path="packages/wallpapers/HoloSpiral" />
-  <remove-project name="CyanogenMod/android_packages_wallpapers_LivePicker" path="packages/wallpapers/LivePicker" />
   <remove-project name="CyanogenMod/android_packages_wallpapers_MagicSmoke" path="packages/wallpapers/MagicSmoke" />
   <remove-project name="CyanogenMod/android_packages_wallpapers_MusicVisualization" path="packages/wallpapers/MusicVisualization" />
   <remove-project name="CyanogenMod/android_packages_wallpapers_NoiseField" path="packages/wallpapers/NoiseField" />
