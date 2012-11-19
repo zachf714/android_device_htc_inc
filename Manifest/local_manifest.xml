@@ -9,8 +9,7 @@
   <project path="device/htc/qsd8k-common" name="android_device_htc_qsd8k-common" remote="ev" />
   <project path="device/htc/inc" name="PonsAsinorem/android_device_htc_inc" revision="jellybean-cm" />
   <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" remote="ev" />
-  <!--project path="kernel/htc/incredikernel" name="tiny4579/android_kernel_common" revision="android-2.6.38-incredikernel-jb" /-->
-  <project path="kernel/htc/incredikernel" name="tiny4579/android_kernel_common" revision="cm10" />
+  <project path="kernel/htc/incredikernel" name="tiny4579/android_kernel_common" revision="android-2.6.38-incredikernel-jb" />
   <!--pseudo_buildbot is a WIP. You can leave it out-->
   <project path="vendor/cm/bot" name="PonsAsinorem/pseudo_buildbot" revision="jb" />
   <project path="vendor/htc" name="android_vendor_htc" remote="ev" />
