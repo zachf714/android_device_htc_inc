@@ -142,11 +142,11 @@ PRODUCT_MANUFACTURER := HTC
 
 # Goo Manager support
 ifneq ($(CM_BUILDTYPE),UNOFFICIAL)
-    CM_BUILDTYPE := PONS
+    CM_BUILDTYPE := TINY
     CM_VERSION := $(PRODUCT_VERSION_MAJOR)-$(shell date -u +%Y%m%d)-$(CM_BUILDTYPE)-$(CM_BUILD)$(CM_EXTRAVERSION)
     PRODUCT_PROPERTY_OVERRIDES += \
         ro.modversion=CyanogenMod-$(CMVERSION) \
-        ro.goo.developerid=PonsAsinorem \
+        ro.goo.developerid=tiny4579 \
         ro.goo.rom=CM$(PRODUCT_VERSION_MAJOR)$(CM_BUILDTYPE)$(CM_BUILD) \
         ro.goo.version=$(shell date +%s)
 
