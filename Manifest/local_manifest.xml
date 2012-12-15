@@ -6,32 +6,35 @@
            review="review.evervolv.com" />
 
   <!--Added-->
-  <project path="device/htc/qsd8k-common" name="android_device_htc_qsd8k-common" remote="ev" revision="jellybean-4.1.2" />
-  <project path="device/htc/inc" name="tiny4579/android_device_htc_inc" revision="jellybean-cm" />
-  <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" remote="ev" revision="jellybean-4.1.2" />
+  <project path="device/htc/qsd8k-common" name="android_device_htc_qsd8k-common" remote="ev" revision="jellybean" />
+  <project path="device/htc/inc" name="tiny4579/android_device_htc_inc" revision="cm-10.1" />
+  <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" remote="ev" revision="jellybean" />
   <project path="kernel/htc/incredikernel" name="tiny4579/android_kernel_common" revision="android-2.6.38-incredikernel-jb" />
   <!--pseudo_buildbot is a WIP. You can leave it out-->
   <project path="vendor/cm/bot" name="PonsAsinorem/pseudo_buildbot" revision="jb" />
-  <project path="vendor/htc" name="android_vendor_htc" remote="ev" revision="jellybean-4.1.2" />
+  <project path="vendor/htc" name="android_vendor_htc" remote="ev" revision="jellybean" />
 
   <!--Replaced-->
   <remove-project path="frameworks/av" name="CyanogenMod/android_frameworks_av" />  
-  <project path="frameworks/av" name="android_frameworks_av" remote="ev" revision="jellybean-4.1.2" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="ev" revision="jellybean" />
 
   <remove-project path="frameworks/native" name="CyanogenMod/android_frameworks_native" />  
-  <project path="frameworks/native" name="android_frameworks_native" remote="ev" revision="jellybean-4.1.2" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="ev" revision="jellybean" />
 
   <remove-project path="hardware/qcom/audio" name="CyanogenMod/android_hardware_qcom_audio" />
-  <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="ev" revision="jellybean-4.1.2" />
+  <project path="hardware/qcom/audio-legacy" name="android_hardware_qcom_audio-legacy" remote="ev" revision="jellybean" />
+
+  <remove-project path="hardware/qcom/audio" name="CyanogenMod/android_hardware_qcom_display" />
+  <project path="hardware/qcom/display-legacy" name="android_hardware_qcom_display-legacy" remote="ev" revision="jellybean" />
 
   <remove-project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" />
-  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="ev" revision="jellybean-4.1.2" />
+  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="ev" revision="jellybean" />
 
   <remove-project path="hardware/ril" name="CyanogenMod/android_hardware_ril" />
-  <project path="hardware/ril" name="android_hardware_ril" remote="ev" revision="jellybean-4.1.2" />
+  <project path="hardware/ril" name="android_hardware_ril" remote="ev" revision="jellybean" />
 
   <remove-project path="vendor/cm" name="CyanogenMod/android_vendor_cm" />
-  <project path="vendor/cm" name="PonsAsinorem/android_vendor_cm" />
+  <project path="vendor/cm" name="tiny4579/android_vendor_cm" revision="cm-10.1" />
 
   <!--Removed-->
   <remove-project path="packages/apps/CMUpdater" name="CyanogenMod/android_packages_apps_CMUpdater" />
