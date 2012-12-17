@@ -139,6 +139,8 @@ PRODUCT_NAME := inc
 PRODUCT_BRAND := verizon_wwe
 PRODUCT_MODEL := ADR6300
 PRODUCT_MANUFACTURER := HTC
+PRODUCT_VERSION_MAJOR := 10
+PRODUCT_VERSION_MINOR := 1
 
 # Goo Manager support
 ifneq ($(CM_BUILDTYPE),UNOFFICIAL)
@@ -147,7 +149,7 @@ ifneq ($(CM_BUILDTYPE),UNOFFICIAL)
     PRODUCT_PROPERTY_OVERRIDES += \
         ro.modversion=CyanogenMod-$(CMVERSION) \
         ro.goo.developerid=tiny4579 \
-        ro.goo.rom=CM$(PRODUCT_VERSION_MAJOR)$(CM_BUILDTYPE)$(CM_BUILD) \
+        ro.goo.rom=CM$(PRODUCT_VERSION_MAJOR)$(PRODUCT_VERSION_MINOR)$(CM_BUILDTYPE)$(CM_BUILD) \
         ro.goo.version=$(shell date +%s)
 
     PRODUCT_COPY_FILES +=  \
