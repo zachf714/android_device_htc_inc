@@ -8,7 +8,10 @@
   <!--Added-->
   <project path="device/htc/qsd8k-common" name="android_device_htc_qsd8k-common" remote="ev" revision="jellybean" />
   <project path="device/htc/inc" name="PonsAsinorem/android_device_htc_inc" revision="cm-10.1" />
+  <project path="hardware/qcom/audio-legacy" name="android_hardware_qcom_audio-legacy" remote="ev" revision="jellybean" />
   <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" remote="ev" revision="jellybean" />
+  <project path="hardware/qcom/display-legacy" name="android_hardware_qcom_display-legacy" remote="ev" revision="jellybean" />
+  <project path="hardware/qcom/gps-legacy" name="android_hardware_qcom_gps-legacy" remote="ev" revision="jellybean" />
   <project path="kernel/htc/incredikernel" name="tiny4579/android_kernel_common" revision="incredikernel-jb42" />
   <!--pseudo_buildbot is a WIP. You can leave it out-->
   <!--project path="vendor/cm/bot" name="PonsAsinorem/pseudo_buildbot" revision="jb" /-->
@@ -20,15 +23,6 @@
 
   <remove-project path="frameworks/native" name="CyanogenMod/android_frameworks_native" />
   <project path="frameworks/native" name="android_frameworks_native" remote="ev" revision="jellybean" />
-
-  <remove-project path="hardware/qcom/audio" name="CyanogenMod/android_hardware_qcom_audio" />
-  <project path="hardware/qcom/audio-legacy" name="android_hardware_qcom_audio-legacy" remote="ev" revision="jellybean" />
-
-  <remove-project path="hardware/qcom/display" name="CyanogenMod/android_hardware_qcom_display" />
-  <project path="hardware/qcom/display-legacy" name="android_hardware_qcom_display-legacy" remote="ev" revision="jellybean" />
-
-  <remove-project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" />
-  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps-legacy" remote="ev" revision="jellybean" />
 
   <remove-project path="hardware/ril" name="CyanogenMod/android_hardware_ril" />
   <project path="hardware/ril" name="android_hardware_ril" remote="ev" revision="jellybean" />
