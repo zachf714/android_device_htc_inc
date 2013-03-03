@@ -18,7 +18,7 @@ repo init -u git://github.com/CyanogenMod/android.git -b jellybean
 
 ### Finish setting up repo
 ```bash
-wget -O .repo/local_manifest.xml https://raw.github.com/PonsAsinorem/android_device_htc_inc/jellybean-cm/Manifest/local_manifest.xml
+wget -O .repo/local_manifests l https://raw.github.com/PonsAsinorem/android_device_htc_inc/jellybean-cm/Manifest/local_manifests
 ```
 
 ### Download the source
