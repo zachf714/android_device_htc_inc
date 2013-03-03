@@ -11,7 +11,7 @@
   <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" remote="ev" />
   <project path="kernel/htc/incredikernel" name="tiny4579/android_kernel_common" revision="android-2.6.38-incredikernel-jb" />
   <!--pseudo_buildbot is a WIP. You can leave it out-->
-  <project path="vendor/cm/bot" name="PonsAsinorem/pseudo_buildbot" revision="jb" />
+  <!--project path="vendor/cm/bot" name="PonsAsinorem/pseudo_buildbot" revision="jb" /-->
   <project path="vendor/htc" name="android_vendor_htc" remote="ev" />
 
   <!--Replaced-->
