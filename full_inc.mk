@@ -147,7 +147,7 @@ ifneq ($(CM_BUILDTYPE),UNOFFICIAL)
     PRODUCT_PROPERTY_OVERRIDES += \
         ro.modversion=CyanogenMod-$(CMVERSION) \
         ro.goo.developerid=PonsAsinorem \
-        ro.goo.rom=CM$(PRODUCT_VERSION_MAJOR)$(CM_BUILDTYPE)$(CM_BUILD) \
+        ro.goo.rom=CM$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)$(CM_BUILDTYPE)$(CM_BUILD) \
         ro.goo.version=$(shell date +%s)
 
     PRODUCT_COPY_FILES +=  \
