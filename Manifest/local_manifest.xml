@@ -1,56 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
-  <remote  name="ev"
-           fetch="https://github.com/Evervolv/"
-           review="review.evervolv.com" />
-
-  <!--Added-->
-  <project path="device/htc/qsd8k-common" name="android_device_htc_qsd8k-common" remote="ev" revision="jellybean" />
-  <project path="device/htc/inc" name="tiny4579/android_device_htc_inc" revision="cm-10.1" />
-  <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" remote="ev" revision="jellybean" />
-  <project path="kernel/htc/incredikernel" name="tiny4579/android_kernel_common" revision="incredikernel-jb42" />
-  <!--pseudo_buildbot is a WIP. You can leave it out-->
-  <project path="vendor/cm/bot" name="PonsAsinorem/pseudo_buildbot" revision="jb" />
-  <project path="vendor/htc" name="android_vendor_htc" remote="ev" revision="jellybean" />
-
-  <!--Replaced-->
-  <remove-project path="frameworks/av" name="CyanogenMod/android_frameworks_av" />  
-  <project path="frameworks/av" name="android_frameworks_av" remote="ev" revision="jellybean" />
-
-  <remove-project path="frameworks/native" name="CyanogenMod/android_frameworks_native" />  
-  <project path="frameworks/native" name="android_frameworks_native" remote="ev" revision="jellybean" />
-
-  <remove-project path="hardware/qcom/audio" name="CyanogenMod/android_hardware_qcom_audio" />
-  <project path="hardware/qcom/audio-legacy" name="android_hardware_qcom_audio-legacy" remote="ev" revision="jellybean" />
-
-  <remove-project path="hardware/qcom/audio" name="CyanogenMod/android_hardware_qcom_display" />
-  <project path="hardware/qcom/display-legacy" name="android_hardware_qcom_display-legacy" remote="ev" revision="jellybean" />
-
-  <remove-project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" />
-  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps-legacy" remote="ev" revision="jellybean" />
-
-  <remove-project path="hardware/ril" name="CyanogenMod/android_hardware_ril" />
-  <project path="hardware/ril" name="android_hardware_ril" remote="ev" revision="jellybean" />
-
-  <remove-project path="vendor/cm" name="CyanogenMod/android_vendor_cm" />
-  <project path="vendor/cm" name="tiny4579/android_vendor_cm" revision="cm-10.1" />
-
-  <!--Removed-->
-  <remove-project path="packages/apps/CMUpdater" name="CyanogenMod/android_packages_apps_CMUpdater" />
-  <remove-project path="packages/apps/CMWallpapers" name="CyanogenMod/android_packages_apps_CMWallpapers" />
-  <remove-project path="packages/apps/Music" name="CyanogenMod/android_packages_apps_Music" />
-  <remove-project path="packages/apps/MusicFX" name="CyanogenMod/android_packages_apps_MusicFX" />
-  <remove-project path="packages/apps/Nfc" name="CyanogenMod/android_packages_apps_Nfc" />
-  <remove-project path="packages/apps/Protips" name="CyanogenMod/android_packages_apps_Protips" />
-  <remove-project path="packages/apps/SoundRecorder" name="CyanogenMod/android_packages_apps_SoundRecorder" />
-  <remove-project path="packages/apps/SpareParts" name="CyanogenMod/android_packages_apps_SpareParts" />
-  <remove-project path="packages/apps/VideoEditor" name="CyanogenMod/android_packages_apps_VideoEditor" />
-  <remove-project path="packages/wallpapers/Basic" name="CyanogenMod/android_packages_wallpapers_Basic" />
-  <remove-project path="packages/wallpapers/Galaxy4" name="CyanogenMod/android_packages_wallpapers_Galaxy4" />
-  <remove-project path="packages/wallpapers/HoloSpiral" name="CyanogenMod/android_packages_wallpapers_HoloSpiral" />
-  <remove-project path="packages/wallpapers/MagicSmoke" name="CyanogenMod/android_packages_wallpapers_MagicSmoke" />
-  <remove-project path="packages/wallpapers/MusicVisualization" name="CyanogenMod/android_packages_wallpapers_MusicVisualization" />
-  <remove-project path="packages/wallpapers/NoiseField" name="CyanogenMod/android_packages_wallpapers_NoiseField" />
-  <remove-project path="packages/wallpapers/PhaseBeam" name="CyanogenMod/android_packages_wallpapers_PhaseBeam" />
+  <remote fetch="https://github.com/Evervolv/" name="ev" review="review.evervolv.com" />
+  <project name="android_device_htc_qsd8k-common" path="device/htc/qsd8k-common" remote="ev" revision="jellybean" />
+  <project name="tiny4579/android_device_htc_inc" path="device/htc/inc" revision="cm-10.1" />
+  <project name="android_hardware_qcom_camera" path="hardware/qcom/camera" remote="ev" revision="jellybean" />
+  <project name="tiny4579/android_kernel_common" path="kernel/htc/incredikernel" revision="incredikernel-jb42" />
+  <project name="PonsAsinorem/pseudo_buildbot" path="vendor/cm/bot" revision="jb" />
+  <project name="android_vendor_htc" path="vendor/htc" remote="ev" revision="jellybean" />
+  <remove-project name="CyanogenMod/android_frameworks_av" path="frameworks/av" />
+  <project name="android_frameworks_av" path="frameworks/av" remote="ev" revision="jellybean" />
+  <remove-project name="CyanogenMod/android_frameworks_native" path="frameworks/native" />
+  <project name="android_frameworks_native" path="frameworks/native" remote="ev" revision="jellybean" />
+  <project name="android_hardware_qcom_audio-legacy" path="hardware/qcom/audio-legacy" remote="ev" revision="jellybean" />
+  <project name="android_hardware_qcom_display-legacy" path="hardware/qcom/display-legacy" remote="ev" revision="jellybean" />
+  <remove-project name="CyanogenMod/android_hardware_qcom_gps" path="hardware/qcom/gps" />
+  <project name="android_hardware_qcom_gps" path="hardware/qcom/gps" remote="ev" revision="jellybean" />
+  <project name="android_hardware_qcom_gps-legacy" path="hardware/qcom/gps-legacy" remote="ev" revision="jellybean" />
+  <remove-project name="CyanogenMod/android_hardware_ril" path="hardware/ril" />
+  <project name="android_hardware_ril" path="hardware/ril" remote="ev" revision="jellybean" />
+  <remove-project name="CyanogenMod/android_vendor_cm" path="vendor/cm" />
+  <project name="tiny4579/android_vendor_cm" path="vendor/cm" revision="cm-10.1" />
+  <remove-project name="CyanogenMod/android_packages_apps_CMUpdater" path="packages/apps/CMUpdater" />
+  <remove-project name="CyanogenMod/android_packages_apps_CMWallpapers" path="packages/apps/CMWallpapers" />
+  <remove-project name="CyanogenMod/android_packages_apps_Music" path="packages/apps/Music" />
+  <remove-project name="CyanogenMod/android_packages_apps_MusicFX" path="packages/apps/MusicFX" />
+  <remove-project name="CyanogenMod/android_packages_apps_Nfc" path="packages/apps/Nfc" />
+  <remove-project name="CyanogenMod/android_packages_apps_Protips" path="packages/apps/Protips" />
+  <remove-project name="CyanogenMod/android_packages_apps_SoundRecorder" path="packages/apps/SoundRecorder" />
+  <remove-project name="CyanogenMod/android_packages_apps_SpareParts" path="packages/apps/SpareParts" />
+  <remove-project name="CyanogenMod/android_packages_apps_VideoEditor" path="packages/apps/VideoEditor" />
+  <remove-project name="CyanogenMod/android_packages_wallpapers_Basic" path="packages/wallpapers/Basic" />
+  <remove-project name="CyanogenMod/android_packages_wallpapers_Galaxy4" path="packages/wallpapers/Galaxy4" />
+  <remove-project name="CyanogenMod/android_packages_wallpapers_HoloSpiral" path="packages/wallpapers/HoloSpiral" />
+  <remove-project name="CyanogenMod/android_packages_wallpapers_MagicSmoke" path="packages/wallpapers/MagicSmoke" />
+  <remove-project name="CyanogenMod/android_packages_wallpapers_MusicVisualization" path="packages/wallpapers/MusicVisualization" />
+  <remove-project name="CyanogenMod/android_packages_wallpapers_NoiseField" path="packages/wallpapers/NoiseField" />
 </manifest>
