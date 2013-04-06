@@ -8,9 +8,9 @@ CM10.1 for the Droid Incredible
 
 ### Prepare to download sources
 ```bash
-mkdir ~/cm10
+mkdir ~/android/cm10
 mkdir ~/bin
-cd ~/cm10/
+cd ~/android/cm10/
 curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > ~/bin/repo
 chmod a+x ~/bin/repo
 repo init -u git://github.com/CyanogenMod/android.git -b cm-10.1
@@ -23,15 +23,15 @@ wget -O .repo/local_manifest.xml https://raw.github.com/tiny4579/android_device_
 
 ### Download the source
 ```bash
-cd ~/cm10
+cd ~/android/cm10
 repo sync -j16
 ```
 NOTE: This WILL take a long time.
 
 ### Build
-Make sure we're in ~/cm10...
+Make sure we're in ~/android/cm10...
 ```bash
-cd ~/cm10
+cd ~/android/cm10
 ```
 
 ### List of cherry-picks/reverts used. the first two are required to build
