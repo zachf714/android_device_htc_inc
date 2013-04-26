@@ -35,7 +35,7 @@ TARGET_KERNEL_SOURCE := kernel/htc/incredikernel
 # Override kernel toolchain. (4.6 is too unstable)
 #KERNEL_TOOLCHAIN_PREFIX:=$(ANDROID_BUILD_TOP)/prebuilts/gcc/toolchain/arm-eabi-4.4.3/bin/arm-eabi-
 # Use Linaro 4.7 toolchain
-KERNEL_TOOLCHAIN_PREFIX:=$(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/linaro-toolchain/bin/arm-eabi-
+KERNEL_TOOLCHAIN_PREFIX:=$(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/linaro-4.7/bin/arm-eabi-
 
 TARGET_BOOTLOADER_BOARD_NAME := inc
 

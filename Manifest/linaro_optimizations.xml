@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- For building with Linaro - rename or delete this file and resync for a normal build -->
+  <remove-project name="CyanogenMod/android_build" path="build" />
+  <project name="loosethisskin/android_build" path="build" revision="cm-10.1-linaro" />
+  <remove-project name="CyanogenMod/android_bionic" path="bionic" />
+  <project name="loosethisskin/android_bionic" path="bionic" revision="cm-10.1-linaro" />
+</manifest>
