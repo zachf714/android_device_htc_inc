@@ -67,12 +67,12 @@ git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_base refs
 #Settings: Battery bar (2/2)
 #http://review.cyanogenmod.org/#/c/31913/
 cd ~/android/cm10/packages/apps/Settings
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Settings refs/changes/13/31913/3 && git cherry-pick FETCH_HEAD
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_Settings refs/changes/13/31913/9 && git cherry-pick FETCH_HEAD
   
 #DeskClock: User-defined world cities
 #http://review.cyanogenmod.org/#/c/33001/
 #cd ~/android/cm10/packages/apps/DeskClock
-#git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_DeskClock refs/changes/01/33001/5 && git cherry-pick FETCH_HEAD
+#git fetch http://review.cyanogenmod.org/CyanogenMod/android_packages_apps_DeskClock refs/changes/01/33001/10 && git cherry-pick FETCH_HEAD
 
 #dalvik memory leak fixes/updates
 cd ~/android/cm10/dalvik
@@ -148,7 +148,7 @@ export DEBUG_NO_STRICT_ALIASING=yes
 ```
 You will also need to pull the Linaro specific local_manifest (This requires a recent version of repo)
 ```bash
-wget -O .repo/local_manifest/local_manifest_linaro.xml https://raw.github.com/tiny4579/android_device_htc_inc/cm-10.1/Manifest/local_manifest_linaro.xml
+wget -O .repo/local_manifest/local_manifest_linaro.xml https://raw.github.com/tiny4579/android_device_htc_inc/cm-10.1/Manifest/linaro_optimizations.xml
 ```
 The above assumes you have the Linaro toolchain extracted or symlinked to ~/android/cm10/prebuilts/gcc/linux-x86/arm/linaro-4.7
 

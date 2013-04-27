@@ -5,4 +5,6 @@
   <project name="loosethisskin/android_build" path="build" revision="cm-10.1-linaro" />
   <remove-project name="CyanogenMod/android_bionic" path="bionic" />
   <project name="loosethisskin/android_bionic" path="bionic" revision="cm-10.1-linaro" />
+  <remove-project name="CyanogenMod/android_external_oprofile" path="external/oprofile" />
+  <project name="tiny4579/android_external_oprofile" path="external/oprofile" revision="cm-10.1-linaro" />
 </manifest>
