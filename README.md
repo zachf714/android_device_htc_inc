@@ -1,7 +1,7 @@
 CM10.1 for the Droid Incredible
 
 ## Info
-[**XDA Discussion thread**](http://forum.xda-developers.com/showthread.php?t=1882918)
+[**XDA Discussion thread**](http://forum.xda-developers.com/showthread.php?t=2050930)
 
 ### Initialize
 [Setup Linux/OS X](http://source.android.com/source/initializing.html) - Please note: it must be sun-java-6, not openjdk
@@ -34,16 +34,12 @@ Make sure we're in ~/android/cm10...
 cd ~/android/cm10
 ```
 
-### List of cherry-picks/reverts used. the first two are required to build
+### List of cherry-picks/reverts used. the first is required to build
 ```bash
-#Fix breakage due to CM revert part 1
-#http://review.cyanogenmod.org/#/c/33305
-cd ~/android/cm10/frameworks/native
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_native refs/changes/05/33305/1 && git cherry-pick FETCH_HEAD
 
-#Fix breakage due to CM revert part 2
-cd ~/android/cm10/hardware/qcom/display-legacy
-git revert b4331823c
+#Fix display issue
+cd ~/android/cm10/hardware/libhardware
+git revert 5b70e9b2
 
 #Change I4a9f8e9e: Fix return type of glGetAttribLocation and glGetUniformLocation
 #http://review.evervolv.com/#/c/3933/
