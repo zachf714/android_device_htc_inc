@@ -11,7 +11,8 @@
   <project path="hardware/qcom/audio-legacy" name="android_hardware_qcom_audio-legacy" remote="ev" revision="jellybean" />
   <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" remote="ev" revision="jellybean" />
   <project path="hardware/qcom/display-legacy" name="android_hardware_qcom_display-legacy" remote="ev" revision="jellybean" />
-  <project path="kernel/htc/incredikernel" name="PonsAsinorem/android_kernel_common" revision="incredikernel-jb42" />
+  <!--project path="kernel/htc/incredikernel" name="PonsAsinorem/android_kernel_common" revision="incredikernel-jb42" /-->
+  <project path="kernel/htc/evervolv" name="android_kernel_htc_qsd8k" remote="ev" revision="jellybean" />
   <!--pseudo_buildbot is a WIP. You can leave it out-->
   <!--project path="vendor/cm/bot" name="PonsAsinorem/pseudo_buildbot" revision="jb" /-->
   <project path="vendor/htc" name="android_vendor_htc" remote="ev" revision="jellybean" />
