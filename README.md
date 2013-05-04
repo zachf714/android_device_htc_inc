@@ -148,7 +148,7 @@ export DEBUG_NO_STRICT_ALIASING=yes
 ```
 You will also need to pull the Linaro specific local_manifest (This requires a recent version of repo)
 ```bash
-wget -O .repo/local_manifest/local_manifest_linaro.xml https://raw.github.com/tiny4579/android_device_htc_inc/cm-10.1/Manifest/linaro_optimizations.xml
+wget -O .repo/local_manifest/linaro_optimizations.xml https://raw.github.com/tiny4579/android_device_htc_inc/cm-10.1/Manifest/linaro_optimizations.xml
 ```
 The above assumes you have the Linaro toolchain extracted or symlinked to ~/android/cm10/prebuilts/gcc/linux-x86/arm/linaro-4.7
 
