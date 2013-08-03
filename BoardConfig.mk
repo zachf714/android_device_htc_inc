@@ -76,6 +76,8 @@ TARGET_RECOVERY_FSTAB   := device/htc/inc/prebuilt/root/fstab.inc
 #Specify CPU
 TARGET_CPU_VARIANT := scorpion
 
+TARGET_RECOVERY_FSTAB   := device/htc/inc/prebuilt/root/fstab.inc
+
 BOARD_HAS_DATADATA := true
 BOARD_SDCARD_DEVICE_PRIMARY := /dev/block/mmcblk1p1
 BOARD_SDCARD_DEVICE_SECONDARY := /dev/block/mmcblk1
