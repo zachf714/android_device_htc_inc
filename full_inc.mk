@@ -84,20 +84,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/htc/inc/prebuilt/etc/firmware/bcm4329.hcd:system/etc/firmware/bcm4329.hcd
 
-#Vold mounts
-PRODUCT_COPY_FILES += \
-    device/htc/inc/prebuilt/etc/vold.fstab:system/etc/vold.fstab
-
 # Prebuilt libcamera for HAL
 PRODUCT_COPY_FILES += \
     device/htc/inc/prebuilt/lib/libcamera.so:obj/lib/libcamera.so \
     device/htc/inc/prebuilt/lib/libcamera.so:system/lib/libcamera.so
-
-# Kernel modules
-ifeq (,$(BUILD_KERNEL))
-PRODUCT_COPY_FILES += \
-    device/htc/inc/prebuilt/lib/modules/ifb.ko:system/lib/modules/ifb.ko
-endif
 
 #
 # Packages needed for Inc
@@ -118,6 +108,7 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
     persist.service.adb.enable=1 \
     ro.adb.secure=1 \
     ro.secure=0
+    persist.sys.usb.config=mass_storage
 
 # Init post-boot script
 PRODUCT_COPY_FILES += \
@@ -144,7 +135,7 @@ PRODUCT_BRAND := verizon_wwe
 PRODUCT_MODEL := ADR6300
 PRODUCT_MANUFACTURER := HTC
 PRODUCT_VERSION_MAJOR := 10
-PRODUCT_VERSION_MINOR := 1
+PRODUCT_VERSION_MINOR := 2
 
 # Goo Manager support
 ifneq ($(CM_BUILDTYPE),UNOFFICIAL)
