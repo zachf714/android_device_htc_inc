@@ -32,10 +32,9 @@ include device/htc/qsd8k-common/BoardConfigCommon.mk
 
 # Override qsd8k-common/BoardConfigCommon.mk to use evervolv
 TARGET_KERNEL_SOURCE := kernel/htc/evervolv
-# Override kernel toolchain. (4.6 is too unstable)
-#KERNEL_TOOLCHAIN_PREFIX:=$(ANDROID_BUILD_TOP)/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-
-# Use AOSP 4.6 toolchain to compile the kernel
-KERNEL_TOOLCHAIN_PREFIX:=$(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/arm-eabi-
+
+# Use GCC 4.7 toolchain
+KERNEL_TOOLCHAIN_PREFIX:=$(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7/bin/arm-eabi-
 
 TARGET_BOOTLOADER_BOARD_NAME := inc
 
