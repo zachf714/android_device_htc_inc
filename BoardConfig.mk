@@ -70,7 +70,7 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 # Try to build the kernel
 TARGET_KERNEL_CONFIG    := evervolv_incrediblec_defconfig
 # Keep this as a fall back in case of no source
-TARGET_PREBUILT_KERNEL  := device/htc/inc/prebuilt/root/kernel
+#TARGET_PREBUILT_KERNEL  := device/htc/inc/prebuilt/root/kernel
 TARGET_RECOVERY_FSTAB   := device/htc/inc/prebuilt/root/fstab.inc
 
 #Specify CPU
