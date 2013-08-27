@@ -31,7 +31,7 @@ USE_CAMERA_STUB := false
 include device/htc/qsd8k-common/BoardConfigCommon.mk
 
 # Override qsd8k-common/BoardConfigCommon.mk to use evervolv
-TARGET_KERNEL_SOURCE := kernel/htc/evervolv
+#TARGET_KERNEL_SOURCE := kernel/htc/incredikernel
 
 # Use GCC 4.7 toolchain
 KERNEL_TOOLCHAIN_PREFIX:=$(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7/bin/arm-eabi-
