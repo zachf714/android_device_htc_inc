@@ -104,7 +104,8 @@ PRODUCT_PACKAGES += \
 
 # USB
 ADDITIONAL_DEFAULT_PROPERTIES += \
-    persist.sys.usb.config=adb,mass_storage \
+    ro.debuggable=1 \
+    persist.sys.usb.config=mtp,adb \
     persist.service.adb.enable=1 \
     ro.adb.secure=0 \
     ro.secure=0
