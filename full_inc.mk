@@ -24,6 +24,7 @@ PRODUCT_COPY_FILES += \
     device/htc/inc/prebuilt/root/init.inc.rc:root/init.inc.rc \
     device/htc/inc/prebuilt/root/init.inc.usb.rc:root/init.inc.usb.rc \
     device/htc/inc/prebuilt/root/ueventd.inc.rc:root/ueventd.inc.rc \
+    device/htc/inc/prebuilt/root/fstab.inc:root/fstab.inc \
     device/htc/inc/prebuilt/bin/hostapd:system/bin/hostapd \
     device/htc/inc/prebuilt/bin/hostapd_cli:system/bin/hostapd_cli
 
