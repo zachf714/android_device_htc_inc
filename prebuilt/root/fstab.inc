@@ -1,8 +1,8 @@
 # nothing here is intented for mounting by init
 
 # vold mounts internal storage and external sdcard
-/devices/platform/msm_sdcc.2/mmc_host/mmc2 /storage/sdcard0 auto defaults voldmanaged=sdcard:0
-/devices/platform/msm_sdcc.2/mmc_host/mmc1 /storage/sdcard1 auto defaults voldmanaged=emmc:1
+/devices/platform/msm_sdcc.2/mmc_host/mmc1 /storage/sdcard0 auto defaults voldmanaged=sdcard:auto
+/devices/platform/msm_sdcc.3/mmc_host/mmc2 /storage/sdcard1 auto defaults voldmanaged=emmc:auto
 
 # for recovery and ota installer script, MTD requires labels
 misc /misc mtd defaults defaults
