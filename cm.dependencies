@@ -1,2 +1,6 @@
 [
+  {
+    "repository": "android_device_sample",
+    "target_path": "device/sample"
+  }
 ]
