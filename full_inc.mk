@@ -79,7 +79,7 @@ PRODUCT_COPY_FILES += \
 
 # APN list
 PRODUCT_COPY_FILES += \
-    device/sample/etc/apns-conf_verizon.xml:system/etc/apns-conf.xml
+    device/htc/inc/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 # Firmware
 PRODUCT_COPY_FILES += \
