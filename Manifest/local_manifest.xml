@@ -1,25 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote fetch="https://github.com/Evervolv/" name="ev" review="review.evervolv.com" />
+
+  <!--Added-->
   <project name="android_device_htc_qsd8k-common" path="device/htc/qsd8k-common" remote="ev" revision="jellybean" />
   <project name="tiny4579/android_device_htc_inc" path="device/htc/inc" revision="cm-10.1" />
-  <!--<project name="tiny4579/android_kernel_common" path="kernel/htc/incredikernel" revision="incredikernel-jb42-devel" />-->
-  <project name="android_kernel_htc_qsd8k" path="kernel/htc/evervolv" remote="ev" revision="jellybean" />
-  <project name="PonsAsinorem/pseudo_buildbot" path="vendor/cm/bot" revision="jb" />
+  <project name="android_kernel_htc_qsd8k" path="kernel/htc/qsd8k" remote="ev" revision="jellybean" />
   <project name="android_vendor_htc" path="vendor/htc" remote="ev" revision="jellybean" />
-  <remove-project name="CyanogenMod/android_frameworks_av" path="frameworks/av" />
-  <project name="android_frameworks_av" path="frameworks/av" remote="ev" revision="jellybean" />
-  <remove-project name="CyanogenMod/android_frameworks_native" path="frameworks/native" />
-  <project name="android_frameworks_native" path="frameworks/native" remote="ev" revision="jellybean" />
   <project name="android_hardware_qcom_audio-legacy" path="hardware/qcom/audio-legacy" remote="ev" revision="jellybean" />
   <project name="android_hardware_qcom_display-legacy" path="hardware/qcom/display-legacy" remote="ev" revision="jellybean" />
+  <project name="android_hardware_qcom_media-legacy" path="hardware/qcom/media-legacy" remote="ev" revision="jellybean" />
+  <project name="android_hardware_qcom_gps-legacy" path="hardware/qcom/gps-legacy" remote="ev" revision="jellybean" />
+  <project name="android_prebuilts_gcc_linux-x86_arm_arm-eabi-4.4.3" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.4.3" remote="ev" revision="jellybean" />
+  <!--DNU/testing-->
+  <!--<project name="tiny4579/android_kernel_common" path="kernel/htc/incredikernel" revision="incredikernel-jb42" />-->
+  <!--<project name="OpenSEMC/android_hardware_qcom_display-legacy" path="hardware/qcom/display-legacy" revision="cm-10.1" />
+  <project name="OpenSEMC/android_hardware_qcom_media-legacy" path="hardware/qcom/media-legacy" revision="cm-10.1" />-->
+
+  <!--Replaced-->
+  <remove-project name="CyanogenMod/android_frameworks_av" path="frameworks/av" />
+  <project name="android_frameworks_av" path="frameworks/av" remote="ev" revision="jellybean" />
+  <!--<remove-project name="CyanogenMod/android_frameworks_native" path="frameworks/native" />
+  <project name="android_frameworks_native" path="frameworks/native" remote="ev" revision="jellybean" />-->
+
   <remove-project name="CyanogenMod/android_hardware_qcom_gps" path="hardware/qcom/gps" />
   <project name="android_hardware_qcom_gps" path="hardware/qcom/gps" remote="ev" revision="jellybean" />
-  <project name="android_hardware_qcom_gps-legacy" path="hardware/qcom/gps-legacy" remote="ev" revision="jellybean" />
-  <remove-project name="CyanogenMod/android_hardware_ril" path="hardware/ril" />
-  <project name="android_hardware_ril" path="hardware/ril" remote="ev" revision="jellybean" />
+
   <remove-project name="CyanogenMod/android_vendor_cm" path="vendor/cm" />
   <project name="tiny4579/android_vendor_cm" path="vendor/cm" revision="cm-10.1" />
+
+  <remove-project name="CyanogenMod/android_hardware_ril" path="hardware/ril" />
+  <project name="android_hardware_ril" path="hardware/ril" remote="ev" revision="jellybean" />
+
+  <!--Removed-->
   <remove-project name="CyanogenMod/android_packages_apps_CMUpdater" path="packages/apps/CMUpdater" />
   <remove-project name="CyanogenMod/android_packages_apps_CMWallpapers" path="packages/apps/CMWallpapers" />
   <remove-project name="CyanogenMod/android_packages_apps_Music" path="packages/apps/Music" />
