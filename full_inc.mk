@@ -114,9 +114,9 @@ PRODUCT_PACKAGES += \
 
 # USB
 ADDITIONAL_DEFAULT_PROPERTIES += \
-    persist.sys.usb.config=mass_storage,mtp \
+    persist.sys.usb.config=mass_storage \
     persist.service.adb.enable=1 \
-    ro.adb.secure=1 \
+    ro.adb.secure=0 \
     ro.secure=0
 
 # Init post-boot script
