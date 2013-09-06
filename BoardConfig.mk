@@ -30,8 +30,8 @@ USE_CAMERA_STUB := false
 # inherit common defines for all qsd8k devices
 include device/htc/qsd8k-common/BoardConfigCommon.mk
 
-# Override qsd8k-common/BoardConfigCommon.mk to use evervolv
-TARGET_KERNEL_SOURCE := kernel/htc/evervolv
+# Override qsd8k-common/BoardConfigCommon.mk to use incredikernel
+#TARGET_KERNEL_SOURCE := kernel/htc/incredikernel
 # Override kernel toolchain. (4.6 is too unstable)
 #KERNEL_TOOLCHAIN_PREFIX:=$(ANDROID_BUILD_TOP)/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-
 # Use AOSP 4.6 toolchain to compile the kernel
