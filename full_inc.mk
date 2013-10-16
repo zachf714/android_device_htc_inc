@@ -115,6 +115,9 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
 PRODUCT_COPY_FILES += \
     device/htc/inc/prebuilt/etc/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh
 
+# Recovery
+TARGET_RECOVERY_UI_LIB := librecovery_htc_inc
+
 # Set dirty_ratio for UMS
 PRODUCT_PROPERTY_OVERRIDES += ro.vold.umsdirtyratio=20
 
