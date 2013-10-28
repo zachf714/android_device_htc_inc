@@ -9,6 +9,6 @@ misc /misc mtd defaults defaults
 recovery /recovery mtd defaults defaults
 boot /boot mtd defaults defaults
 system /system yaffs2 ro wait
-cache /cache yaffs2 defaults defaults
-/dev/block/mmcblk0p1 /data ext3 defaults defaults
+/dev/block/mmcblk0p2 /cache ext4 defaults defaults
+/dev/block/mmcblk0p1 /data ext4 defaults defaults
 datadata /datadata yaffs2 defaults defaults
