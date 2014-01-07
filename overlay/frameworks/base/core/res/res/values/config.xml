@@ -223,4 +223,9 @@
          config to 7. --> 
     <integer name="config_deviceHardwareKeys">15</integer>
 
+    <!-- MMS user agent string -->
+    <string name="config_mms_user_agent" translatable="false">pcdadr63k</string>
+
+    <!-- MMS user agent profile urk -->
+    <string name="config_mms_user_agent_profile_url" translatable="false">http://uaprof.vtext.com/pcd/adr63k/adr63k.xml</string>
 </resources>
