@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="ev"
+           fetch="https://github.com/Evervolv/"
+           review="review.evervolv.com" />
+
+  <!--Added-->
+  <project path="device/htc/qsd8k-common" name="android_device_htc_qsd8k-common" remote="ev" revision="kitkat" />
+  <project path="device/htc/inc" name="zachf714/android_device_htc_inc" revision="omni-4.4" remote="github" />
+  <project path="hardware/qcom/audio-legacy" name="android_hardware_qcom_audio-legacy" remote="ev" revision="kitkat" />
+  <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" remote="ev" revision="kitkat" />
+  <project path="hardware/qcom/display-legacy" name="android_hardware_qcom_display-legacy" remote="ev" revision="kitkat" />
+  <project path="hardware/qcom/gps-legacy" name="android_hardware_qcom_gps-legacy" remote="ev" revision="kitkat" />
+  <!--project path="kernel/htc/incredikernel" name="PonsAsinorem/android_kernel_common" revision="incredikernel-jb42" /-->
+  <project path="kernel/htc/evervolv" name="android_kernel_htc_qsd8k" remote="ev" revision="kitkat" />
+  <!--pseudo_buildbot is a WIP. You can leave it out-->
+  <!--project path="vendor/cm/bot" name="PonsAsinorem/pseudo_buildbot" revision="jb" /-->
+  <project path="vendor/htc" name="android_vendor_htc" remote="ev" revision="kitkat" />
+
+  <!--Replaced-->
+  <remove-project path="frameworks/av" name="android_frameworks_av" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="ev" revision="kitkat" />
+
+  <remove-project path="frameworks/native" name="android_frameworks_native" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="ev" revision="kitkat" />
+
+  <remove-project path="hardware/ril" name="android_hardware_ril" />
+  <project path="hardware/ril" name="android_hardware_ril" remote="ev" revision="kitkat" />
+
+  <remove-project path="vendor/omni" name="android_vendor_omni" />
+  <project path="vendor/omni" name="zachf714/android_vendor_omni" remote="github" revision="omni-4.4" />
+
+  <remove-project path="bootable/recovery" name="android_bootable_recovery" />
+  <project path="bootable/recovery" name="PhilZ-cwm6/philz_touch_cwm6" remote="github" revision="cm-11.0" />
+
+  <!--Removed-->
+  <remove-project path="packages/apps/Apollo" name="android_packages_apps_Apollo" />
+  <remove-project path="packages/apps/DashClock" name="android_packages_apps_DashClock"  />
+  <remove-project path="packages/apps/DSPManager" name="android_packages_apps_DSPManager" />
+  <remove-project path="packages/apps/Email" name="android_packages_apps_Email" remote="omnirom" />
+  <remove-project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" />
+  <remove-project path="packages/apps/Music" name="platform/packages/apps/Music" />
+  <remove-project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" />
+  <remove-project path="packages/apps/Nfc" name="android_packages_apps_Nfc" />
+  <remove-project path="packages/apps/OpenDelta" name="android_packages_apps_OpenDelta" />
+  <remove-project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
+  <remove-project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
+  <remove-project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
+  <remove-project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" />
+  <remove-project path="packages/apps/VideoEditor" name="platform/packages/apps/VideoEditor" />
+  <remove-project path="packages/apps/VoiceDialer" name="platform/packages/apps/VoiceDialer" />
+  <remove-project path="packages/wallpapers/Basic" name="android_packages_wallpapers_Basic" />
+  <remove-project path="packages/wallpapers/Galaxy4" name="platform/packages/wallpapers/Galaxy4" />
+  <remove-project path="packages/wallpapers/HoloSpiral" name="platform/packages/wallpapers/HoloSpiral" />
+  <remove-project path="packages/wallpapers/MagicSmoke" name="platform/packages/wallpapers/MagicSmoke" />
+  <remove-project path="packages/wallpapers/MusicVisualization" name="platform/packages/wallpapers/MusicVisualization" />
+  <remove-project path="packages/wallpapers/NoiseField" name="platform/packages/wallpapers/NoiseField" />
+  <remove-project path="packages/wallpapers/PhaseBeam" name="android_packages_wallpapers_PhaseBeam" />
+</manifest>
