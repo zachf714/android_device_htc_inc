@@ -30,10 +30,14 @@ USE_CAMERA_STUB := false
 # inherit common defines for all qsd8k devices
 include device/htc/qsd8k-common/BoardConfigCommon.mk
 
+KERNEL_TOOLCHAIN_PREFIX:=$(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7
+
 TARGET_BOOTLOADER_BOARD_NAME := inc
 
 # Legacy support flags
 BOARD_USE_LEGACY_TRACKPAD := true
+
+TARGET_USES_QCOM_BSP
 
 BOARD_HAS_SCREEN_OFF_FLICKER := true
 

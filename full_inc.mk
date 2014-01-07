@@ -100,7 +100,13 @@ PRODUCT_PACKAGES += \
 
 # USB
 ADDITIONAL_DEFAULT_PROPERTIES += \
-    persist.sys.usb.config=mass_storage
+    ro.debuggable=1 \
+    persist.sys.usb.config=mass_storage,adb \
+    persist.service.adb.enable=1
+
+# Init post-boot script
+PRODUCT_COPY_FILES += \
+    device/htc/inc/prebuilt/etc/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh
 
 # Recovery
 TARGET_RECOVERY_UI_LIB := librecovery_htc_inc
@@ -112,6 +118,13 @@ PRODUCT_PROPERTY_OVERRIDES += ro.vold.umsdirtyratio=20
 $(call inherit-product, device/htc/qsd8k-common/qsd8k.mk)
 
 $(call inherit-product-if-exists, vendor/htc/inc/inc-vendor.mk)
+
+# telephony
+
+$(call inherit-product, $(SRC_TARGET_DIR)/product/generic.mk)
+
+# Lauguages
+$(call inherit-product, $(SRC_TARGET_DIR)/product/locales_full.mk)
 
 PRODUCT_NAME := full_inc
 PRODUCT_DEVICE := inc
