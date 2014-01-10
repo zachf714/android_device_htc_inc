@@ -136,20 +136,3 @@ PRODUCT_NAME := inc
 PRODUCT_BRAND := verizon_wwe
 PRODUCT_MODEL := ADR6300
 PRODUCT_MANUFACTURER := HTC
-PRODUCT_VERSION_MAJOR := 10
-PRODUCT_VERSION_MINOR := 2
-CM_BUILDTYPE := UNOFFICIAL
-
-# Goo Manager support
-ifeq ($(CM_BUILDTYPE),UNOFFICIAL)
-    CM_BUILDTYPE := PONS
-    CM_VERSION := $(PRODUCT_VERSION_MAJOR)-$(shell date -u +%Y%m%d)-$(CM_BUILDTYPE)-$(CM_BUILD)$(CM_EXTRAVERSION)
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-$(CMVERSION) \
-        ro.goo.developerid=PonsAsinorem \
-        ro.goo.rom=CM$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)$(CM_BUILDTYPE)$(CM_BUILD) \
-        ro.goo.version=$(shell date +%s)
-
-    PRODUCT_COPY_FILES +=  \
-        vendor/cm/proprietary/GooManager.apk:system/app/GooManager.apk
-endif
