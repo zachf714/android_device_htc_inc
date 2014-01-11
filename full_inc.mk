@@ -43,7 +43,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.telephony.call_ring.delay=3000 \
 	ro.setupwizard.enable_bypass=1 \
 	ro.media.dec.jpeg.memcap=20000000 \
-	ro.media.enc.jpeg.quality=95,85,70
+	ro.media.enc.jpeg.quality=95,85,70 \
+	ro.sys.force_full_hwa=1
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml
