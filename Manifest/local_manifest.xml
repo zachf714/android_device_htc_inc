@@ -7,7 +7,7 @@
            
   <!-- New/Added Projects -->
   <project path="device/htc/inc" name="zachf714/android_device_htc_inc" remote="github" revision="cm-11.0" />
-  <project path="device/htc/supersonic" name="zachf714/android_device_htc_supersonic" remote="github" revision="cm-11.0" />
+  <!--<project path="device/htc/supersonic" name="zachf714/android_device_htc_supersonic" remote="github" revision="cm-11.0" />-->
   <project path="device/htc/qsd8k-common" name="android_device_htc_qsd8k-common" remote="ev" revision="kitkat" />
   <project path="kernel/htc/qsd8k" name="android_kernel_htc_qsd8k" remote="ev" revision="kitkat" />
   <project path="hardware/qcom/audio-legacy" name="android_hardware_qcom_audio-legacy" remote="ev" revision="kitkat" />
