@@ -138,6 +138,9 @@ TARGET_RECOVERY_UI_LIB := librecovery_htc_inc
 # Set dirty_ratio for UMS
 PRODUCT_PROPERTY_OVERRIDES += ro.vold.umsdirtyratio=20
 
+#Disable LowRam to enable LS widgets
+PRODUCT_PROPERTY_OVERRIDES += ro.config.low_ram=false
+
 # Common qsd8k stuff
 $(call inherit-product, device/htc/qsd8k-common/qsd8k.mk)
 
