@@ -34,7 +34,7 @@ include device/htc/qsd8k-common/BoardConfigCommon.mk
 #TARGET_KERNEL_SOURCE := kernel/htc/qsd8k
 
 # Use Custom Toolchain
-KERNEL_TOOLCHAIN_PREFIX:=$(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.4.3/bin/arm-eabi-
+#KERNEL_TOOLCHAIN_PREFIX:=$(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.4.3/bin/arm-eabi-
 
 TARGET_BOOTLOADER_BOARD_NAME := inc
 
