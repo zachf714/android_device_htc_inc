@@ -91,24 +91,6 @@ PRODUCT_COPY_FILES += \
     device/htc/inc/prebuilt/lib/libcamera.so:obj/lib/libcamera.so \
     device/htc/inc/prebuilt/lib/libcamera.so:system/lib/libcamera.so
 
-#Quick fix for UI sounds
-PRODUCT_COPY_FILESS += \
-    frameworks/base/data/sounds/effects/ogg/Dock.ogg:system/media/audio/ui/Dock.ogg \
-    frameworks/base/data/sounds/effects/ogg/Effect_Tick_48k.ogg:system/media/audio/ui/Effect_Tick.ogg \
-    frameworks/base/data/sounds/effects/ogg/KeypressDelete_120_48k.ogg:system/media/audio/ui/KeypressDelete.ogg \
-    frameworks/base/data/sounds/effects/ogg/KeypressReturn_120_48k.ogg:system/media/audio/ui/KeypressReturn.ogg \
-    frameworks/base/data/sounds/effects/ogg/KeypressSpacebar_120_48k.ogg:system/media/audio/ui/KeypressSpacebar.ogg \
-    frameworks/base/data/sounds/effects/ogg/KeypressStandard_120_48k.ogg:system/media/audio/ui/KeypressStandard.ogg \
-    frameworks/base/data/sounds/effects/ogg/KeypressInvalid_120_48k.ogg:system/media/audio/ui/KeypressInvalid.ogg \
-    frameworks/base/data/sounds/effects/ogg/Lock.ogg:system/media/audio/ui/Lock.ogg \
-    frameworks/base/data/sounds/effects/ogg/LowBattery.ogg:system/media/audio/ui/LowBattery.ogg \
-    frameworks/base/data/sounds/effects/ogg/Undock.ogg:system/media/audio/ui/Undock.ogg \
-    frameworks/base/data/sounds/effects/ogg/Unlock.ogg:system/media/audio/ui/Unlock.ogg \
-    frameworks/base/data/sounds/effects/ogg/VideoRecord_48k.ogg:system/media/audio/ui/VideoRecord.ogg \
-    frameworks/base/data/sounds/effects/ogg/camera_click_48k.ogg:system/media/audio/ui/camera_click.ogg \
-    frameworks/base/data/sounds/effects/ogg/camera_focus.ogg:system/media/audio/ui/camera_focus.ogg 
-
-
 #
 # Packages needed for Inc
 #
