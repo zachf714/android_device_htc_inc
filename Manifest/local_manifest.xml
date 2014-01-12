@@ -7,7 +7,7 @@
            
   <!-- New/Added Projects -->
   <project path="device/htc/inc" name="zachf714/android_device_htc_inc" remote="github" revision="cm-11.0" />
-  <!--<project path="device/htc/supersonic" name="zachf714/android_device_htc_supersonic" remote="github" revision="cm-11.0" />-->
+  <project path="device/htc/supersonic" name="zachf714/android_device_htc_supersonic" remote="github" revision="cm-11.0" />
   <project path="device/htc/qsd8k-common" name="android_device_htc_qsd8k-common" remote="ev" revision="kitkat" />
   <project path="kernel/htc/qsd8k" name="android_kernel_htc_qsd8k" remote="ev" revision="kitkat" />
   <project path="hardware/qcom/audio-legacy" name="android_hardware_qcom_audio-legacy" remote="ev" revision="kitkat" />
@@ -21,8 +21,8 @@
   <remove-project path="device/generic/armv7-a-neon" name="CyanogenMod/android_device_generic_armv7-a-neon" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" remote="aosp" revision="refs/tags/android-4.4.2_r1" />
   
-  <remove-project path="external/iproute2" name="CyanogenMod/android_external_iproute2" />
-  <project path="external/iproute2" name="platform/external/iproute2" remote="aosp" revision="refs/tags/android-4.4.2_r1" groups="pdk" />
+  <!--<remove-project path="external/iproute2" name="CyanogenMod/android_external_iproute2" />-->
+  <!--<project path="external/iproute2" name="platform/external/iproute2" remote="aosp" revision="refs/tags/android-4.4.2_r1" groups="pdk" />-->
   
   <remove-project path="frameworks/av" name="CyanogenMod/android_frameworks_av" />
   <project path="frameworks/av" name="android_frameworks_av" remote="ev" revision="kitkat" />
