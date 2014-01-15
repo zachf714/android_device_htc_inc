@@ -14,7 +14,7 @@ TARGET_SCREEN_WIDTH := 480
 # Inherit device configuration
 $(call inherit-product, device/htc/inc/full_inc.mk)
 
-TARGET_UNOFFICIAL_BUILD_ID := ADTR
+TARGET_UNOFFICIAL_BUILD_ID := FENDER
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := inc
