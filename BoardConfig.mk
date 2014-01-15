@@ -36,6 +36,9 @@ include device/htc/qsd8k-common/BoardConfigCommon.mk
 # Use Custom Toolchain
 #KERNEL_TOOLCHAIN_PREFIX:=$(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.4.3/bin/arm-eabi-
 
+#Allow Recovery Compile
+BOARD_NEEDS_LZMA_MINIGZIP := true
+
 TARGET_BOOTLOADER_BOARD_NAME := inc
 
 # Legacy support flags
