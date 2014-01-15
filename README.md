@@ -37,6 +37,15 @@ cd ~/android/cm-11.0
 
 ### List of cherry-picks/reverts used. the first two are required to build
 ```bash
+cd build
+git fetch https://gerrit.omnirom.org/android_build refs/changes/37/4537/2 && git cherry-pick FETCH_HEAD
+
+cd external/iproute2
+git revert 4c48963
+
+cd frameworks/opt/telephony
+git fetch http://review.evervolv.com/android_frameworks_opt_telephony refs/changes/58/9758/1 && git cherry-pick FETCH_HEAD
+git fetch http://review.evervolv.com/android_frameworks_opt_telephony refs/changes/59/9759/1 && git cherry-pick FETCH_HEAD
 
 ```
 
