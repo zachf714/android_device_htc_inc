@@ -43,6 +43,9 @@
   <remove-project path="packages/apps/Camera2" name="CyanogenMod/android_packages_apps_Camera2" />
   <project path="packages/apps/Camera2" name="CyanogenMod/android_packages_apps_Camera2" revision="cm-11.0-old" />
 
+  <!--<remove-project path="build" name="CyanogenMod/android_build" />
+  <project path="build" name="android_build" remote="ev" revision="kitkat" />-->
+
 
   <!--Removed Projects-->
   <remove-project path="packages/apps/Apollo" name="CyanogenMod/android_packages_apps_Apollo" />
@@ -50,7 +53,6 @@
   <remove-project path="packages/apps/CMAccount" name="CyanogenMod/android_packages_apps_CMAccount" />
   <remove-project path="packages/apps/CMUpdater" name="CyanogenMod/android_packages_apps_CMUpdater" />
   <remove-project path="packages/apps/CMWallpapers" name="CyanogenMod/android_packages_apps_CMWallpapers" />
-  <remove-project path="packages/apps/Email" name="CyanogenMod/android_packages_apps_Email" />
   <remove-project path="packages/apps/Exchange" name="CyanogenMod/android_packages_apps_Exchange" />
   <remove-project path="packages/apps/LockClock" name="CyanogenMod/android_packages_apps_LockClock" />
   <remove-project path="packages/apps/Nfc" name="CyanogenMod/android_packages_apps_Nfc" />
