@@ -1,5 +1,11 @@
 #!/bin/bash
 
+echo CLOBBER
+make clobber 
+echo Repo Sync
+repo sync
+
+
 echo CyanogenMod Picks
 
 cd ~/android/INC-CM-11/ && . build/envsetup.sh ||exit 1
@@ -20,6 +26,11 @@ git fetch http://review.evervolv.com/android_frameworks_opt_telephony refs/chang
 cd ~/android/INC-CM-11/external/iproute2 || exit 1 && git revert 4c48963
 cd ~/android/INC-CM-11/build || exit 1
 git fetch https://gerrit.omnirom.org/android_build refs/changes/37/4537/2 && git cherry-pick FETCH_HEAD
+#cd ~/android/INC-CM-11/external/bluetooth/bluedroid || exit 1 && git revert -m 1 f65bb9c
+#cd ~/android/INC-CM-11/packages/apps/Bluetooth || exit 1 && git revert -m 1 1872dee
+#cd ~/android/INC-CM-11/packages/apps/BluetoothExt || exit 1 && git revert -m 1 094baa1
+#cd ~/android/INC-CM-11/frameworks/base || exit 1 && git revert 72283a3 a010aef
+#cd ~/android/INC-CM-11/hardware/libhardware || exit 1 && git revert 3c4507f 7babc7e
 cd ~/android/INC-CM-11 || exit 1 && . build/envsetup.sh 
 
 read -p Done
