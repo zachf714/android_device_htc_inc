@@ -18,6 +18,20 @@ repopick 56515  # vold: allow swapped storage paths at vold init
 repopick 56516  # Advanced storage: vold swap storage paths
 repopick 56950  # storage: allow swapping primary storage for apps
 repopick 56951  # Advanced storage: swap primary storage for apps
+repopick 56619  # Better expose 'QS Tiles and layout' function
+repopick 58072  # Better expose 'QS Tiles and layout' function
+repopick 58344  # Bluetooth: Header file changes to add new APIs for Test APK
+repopick 58293  # Fixes BLE LPP monitor callback issue
+repopick 58294  # Bluetooth: Add support to send/receive raw command/event
+repopick 58295  # Bluetooth: Include remote device name as part of filter list
+repopick 58296  # Bluetooth: Increase gatt discover service timeout
+repopick 58297  # Bluetooth: Handle invalid packet in incoming stream
+repopick 58298  # Bluetooth: Register new callback for HCI events callback
+repopick 58299  # Bluetooth: Synchronise Key release command and Key State.
+repopick 58300  # Bluetooth: Remove pending MAP authorization pop up
+repopick 58301  # Bluetooth: Map: update proper interrupted state during bt on/off
+repopick 58303  # Bluetooth: Add PXP profile reconnection  after link loss
+repopick 58333  # Bluetooth: Fix to avoid object leaks during BT OFF
 
 
 cd ~/android/INC-CM-11/frameworks/opt/telephony || exit 1
