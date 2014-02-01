@@ -36,6 +36,9 @@ include device/htc/qsd8k-common/BoardConfigCommon.mk
 # Use Custom Toolchain
 #KERNEL_TOOLCHAIN_PREFIX:=$(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.4.3/bin/arm-eabi-
 
+#Use Half-Res Bootanimation for SystemSpace and Speeds up Boot time
+TARGET_BOOTANIMATION_HALF_RES := true
+
 #Allow Recovery Compile
 BOARD_NEEDS_LZMA_MINIGZIP := true
 
