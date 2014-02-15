@@ -15,7 +15,6 @@ repopick 54965  # Frameworks: Lockscreen custom wallpaper (1/2)
 repopick 54966  # Settings: Lockscreen custom wallpaper (2/2)
 repopick 55229  # QS: Make it possible to show smaller icons (1/2)
 repopick 55228  # QS: Make it possible to show smaller icons (2/2)
-repopick 57536  # DCTracker: call setupAllAPN when the dctracker constructed
 repopick 56515  # vold: allow swapped storage paths at vold init
 repopick 56516  # Advanced storage: vold swap storage paths
 repopick 56950  # storage: allow swapping primary storage for apps
