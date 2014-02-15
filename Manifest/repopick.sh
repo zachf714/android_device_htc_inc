@@ -31,5 +31,5 @@ cd ~/android/INC-CM-11 || exit 1 && . build/envsetup.sh
 
 read -p Done
 
-lunch cm_inc
+lunch cm_inc cm_inc-userdebug
 time make bacon -j6
