@@ -172,7 +172,7 @@
 
     <!-- Common options are [1, 4] for TYPE_WIFI and TYPE_MOBILE_DUN or
 
-    <!== [0,1,5,7] for TYPE_MOBILE, TYPE_WIFI, TYPE_MOBILE_HIPRI and TYPE_BLUETOOTH -->
+    <!-- [0,1,5,7] for TYPE_MOBILE, TYPE_WIFI, TYPE_MOBILE_HIPRI and TYPE_BLUETOOTH -->
 
     <integer-array name="config_tether_upstream_types">
         <item>0</item>
@@ -228,4 +228,7 @@
 
     <!-- MMS user agent profile urk -->
     <string name="config_mms_user_agent_profile_url" translatable="false">http://uaprof.vtext.com/pcd/adr63k/adr63k.xml</string>
+
+    <!-- LED FlashLight -->
+    <bool name="config_enableTorch">true</bool>
 </resources>
