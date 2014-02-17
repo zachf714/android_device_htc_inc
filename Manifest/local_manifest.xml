@@ -40,11 +40,8 @@
   <project path="vendor/cm" name="zachf714/android_vendor_cm" revision="cm-11.0" />
 
   <!--This is just a test to see if CAF is breaking camera-->
-  <remove-project name="CyanogenMod/android_packages_apps_Camera2" />
-  <project path="packages/apps/Camera2" name="CyanogenMod/android_packages_apps_Camera2" revision="cm-11.0-old" />
-
-  <!--<remove-project path="build" name="CyanogenMod/android_build" />
-  <project path="build" name="android_build" remote="ev" revision="kitkat" />-->
+  <!--<remove-project name="CyanogenMod/android_packages_apps_Camera2" />-->
+  <!--<project path="packages/apps/Camera2" name="CyanogenMod/android_packages_apps_Camera2" revision="cm-11.0-old" />-->
 
 
   <!--Removed Projects-->
