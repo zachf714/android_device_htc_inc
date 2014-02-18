@@ -31,7 +31,7 @@ USE_CAMERA_STUB := false
 include device/htc/qsd8k-common/BoardConfigCommon.mk
 
 # Override qsd8k-common/BoardConfigCommon.mk to use evervolv
-#TARGET_KERNEL_SOURCE := kernel/htc/qsd8k
+TARGET_KERNEL_SOURCE := kernel/htc/incredikernel
 
 # Use Custom Toolchain
 #KERNEL_TOOLCHAIN_PREFIX:=$(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.4.3/bin/arm-eabi-
@@ -80,7 +80,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x09500000
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 # Try to build the kernel
-TARGET_KERNEL_CONFIG    := evervolv_incrediblec_defconfig
+TARGET_KERNEL_CONFIG    := incrediblec-incredikernel_defconfig
 # Keep this as a fall back in case of no source
 #TARGET_PREBUILT_KERNEL  := device/htc/inc/prebuilt/root/kernel
 TARGET_RECOVERY_FSTAB   := device/htc/inc/prebuilt/root/fstab.inc
