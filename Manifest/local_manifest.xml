@@ -26,10 +26,10 @@
   <!--<project path="external/iproute2" name="platform/external/iproute2" remote="aosp" revision="refs/tags/android-4.4.2_r1" groups="pdk" />-->
   
   <remove-project name="CyanogenMod/android_frameworks_av" />
-  <project path="frameworks/av" name="android_frameworks_av" remote="ev" revision="kitkat" />
+  <project path="frameworks/av" name="zachf714/android_frameworks_av" remote="github" revision="cm-11.0-qsd8x50" />
 
   <remove-project name="CyanogenMod/android_frameworks_native" />
-  <project path="frameworks/native" name="android_frameworks_native" remote="ev" revision="kitkat" />
+  <project path="frameworks/native" name="zachf714/android_frameworks_native" remote="github" revision="cm-11.0-qsd8x50" />
 
   <remove-project name="CyanogenMod/android_hardware_qcom_gps" />
   <project path="hardware/qcom/gps-legacy" name="android_hardware_qcom_gps-legacy" remote="ev" revision="kitkat" />
