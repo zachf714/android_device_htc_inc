@@ -21,6 +21,8 @@
 
   <remove-project name="CyanogenMod/android_device_generic_armv7-a-neon" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" remote="aosp" revision="refs/tags/android-4.4.2_r1" />
+
+  <!--Only if you are lazy-->
   
   <!--<remove-project path="external/iproute2" name="CyanogenMod/android_external_iproute2" />-->
   <!--<project path="external/iproute2" name="platform/external/iproute2" remote="aosp" revision="refs/tags/android-4.4.2_r1" groups="pdk" />-->
@@ -39,10 +41,6 @@
 
   <remove-project name="CyanogenMod/android_vendor_cm" />
   <project path="vendor/cm" name="zachf714/android_vendor_cm" revision="cm-11.0" />
-
-  <!--This is just a test to see if CAF is breaking camera-->
-  <!--<remove-project name="CyanogenMod/android_packages_apps_Camera2" />-->
-  <!--<project path="packages/apps/Camera2" name="CyanogenMod/android_packages_apps_Camera2" revision="cm-11.0-old" />-->
 
 
   <!--Removed Projects-->

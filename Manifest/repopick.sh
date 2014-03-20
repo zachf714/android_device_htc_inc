@@ -22,7 +22,6 @@ cd ~/android/INC-CM-11/frameworks/opt/telephony || exit 1
 git fetch http://review.evervolv.com/android_frameworks_opt_telephony refs/changes/58/9758/1 && git cherry-pick FETCH_HEAD
 git fetch http://review.evervolv.com/android_frameworks_opt_telephony refs/changes/59/9759/1 && git cherry-pick FETCH_HEAD
 cd ~/android/INC-CM-11/external/iproute2 || exit 1 && git revert 4c48963 --no-edit
-cd ~/android/INC-CM-11/frameworks/base || exit 1 && git revert 956497ec7d387135caf42b574275fa91e8f5b53c --no-edit
 cd ~/android/INC-CM-11/build || exit 1
 git fetch https://gerrit.omnirom.org/android_build refs/changes/37/4537/2 && git cherry-pick FETCH_HEAD
 cd ~/android/INC-CM-11 || exit 1 && . build/envsetup.sh 
