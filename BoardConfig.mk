@@ -30,8 +30,8 @@ USE_CAMERA_STUB := false
 # inherit common defines for all qsd8k devices
 include device/htc/qsd8k-common/BoardConfigCommon.mk
 
-# Override qsd8k-common/BoardConfigCommon.mk to use incredikernel
-#TARGET_KERNEL_SOURCE := kernel/htc/incredikernel
+ Override qsd8k-common/BoardConfigCommon.mk to use incredikernel
+TARGET_KERNEL_SOURCE := kernel/htc/incredikernel
 # Override kernel toolchain. (4.6 is too unstable)
 #KERNEL_TOOLCHAIN_PREFIX:=$(ANDROID_BUILD_TOP)/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-
 # Use AOSP 4.6 toolchain to compile the kernel
@@ -73,7 +73,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x09500000
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 # Try to build the kernel
-TARGET_KERNEL_CONFIG    := evervolv_incrediblec_defconfig
+TARGET_KERNEL_CONFIG    := incrediblec-incredikernel_defconfig
 # Keep this as a fall back in case of no source
 TARGET_PREBUILT_KERNEL  := device/htc/inc/prebuilt/root/kernel
 
