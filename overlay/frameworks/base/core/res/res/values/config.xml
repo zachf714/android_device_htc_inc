@@ -229,6 +229,4 @@
     <!-- MMS user agent profile urk -->
     <string name="config_mms_user_agent_profile_url" translatable="false">http://uaprof.vtext.com/pcd/adr63k/adr63k.xml</string>
 
-    <!-- LED FlashLight -->
-    <bool name="config_enableTorch">true</bool>
 </resources>
