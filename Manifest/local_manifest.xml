@@ -4,7 +4,7 @@
 
   <!--Added-->
   <project name="android_device_htc_qsd8k-common" path="device/htc/qsd8k-common" remote="ev" revision="jellybean" />
-  <project name="tiny4579/android_device_htc_inc" path="device/htc/inc" revision="cm-10.1" />
+  <project name="zachf714/android_device_htc_inc" path="device/htc/inc" revision="cm-10.1" />
   <!--<project name="android_kernel_htc_qsd8k" path="kernel/htc/qsd8k" remote="ev" revision="jellybean" />-->
   <project name="tiny4579/android_kernel_common" path="kernel/htc/incredikernel" revision="incredikernel-jb42" />
   <project name="android_vendor_htc" path="vendor/htc" remote="ev" revision="jellybean" />
