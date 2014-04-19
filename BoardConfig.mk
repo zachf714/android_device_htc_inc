@@ -110,3 +110,4 @@ TW_CHARGING_LED_PATH := /sys/class/leds/amber/brightness
 TW_MAX_BRIGHTNESS := 255
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TARGET_RECOVERY_PIXEL_FORMAT := "BGR_565"
+TW_NO_USB_STORAGE := true
