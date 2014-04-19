@@ -6,35 +6,32 @@
            review="review.evervolv.com" />
            
   <!-- New/Added Projects -->
-  <project path="device/htc/inc" name="zachf714/android_device_htc_inc" remote="cm" revision="aokp-4.4" />
-  <project path="device/htc/supersonic" name="zachf714/android_device_htc_supersonic" remote="cm" revision="cm-11.0" />
+  <project path="device/htc/inc" name="zachf714/android_device_htc_inc" remote="github" revision="cm-11.0" />
+  <project path="device/htc/supersonic" name="zachf714/android_device_htc_supersonic" remote="github" revision="cm-11.0" />
   <project path="device/htc/qsd8k-common" name="android_device_htc_qsd8k-common" remote="ev" revision="kitkat" />
   <project path="kernel/htc/qsd8k" name="android_kernel_htc_qsd8k" remote="ev" revision="kitkat" />
-  <project path="kernel/htc/incredikernel" name="zachf714/android_kernel_common" remote="cm" revision="incredikernel-kk44" /> 
+  <project path="kernel/htc/incredikernel" name="zachf714/android_kernel_common" remote="github" revision="incredikernel-kk44" /> 
   <project path="hardware/qcom/audio-legacy" name="android_hardware_qcom_audio-legacy" remote="ev" revision="kitkat" />
   <project path="hardware/qcom/display-legacy" name="android_hardware_qcom_display-legacy" remote="ev" revision="kitkat" />
   <project path="hardware/qcom/media-legacy" name="android_hardware_qcom_media-legacy" remote="ev" revision="kitkat" />
-  <!--<project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.4.3" name="android_prebuilts_gcc_linux-x86_arm_arm-eabi-4.4.3" remote="ev" revision="kitkat" />-->
-
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.4.3" name="android_prebuilts_gcc_linux-x86_arm_arm-eabi-4.4.3" remote="ev" revision="kitkat" />
+  <project name="android_vendor_htc" path="vendor/htc" remote="ev" revision="kitkat" />
 
   <!--Replaced-->
 
-  <!--<remove-project name="CyanogenMod/android_device_generic_armv7-a-neon" />-->
-  <!--<project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" remote="aosp" revision="refs/tags/android-4.4.2_r1" />-->
+  <remove-project name="CyanogenMod/android_device_generic_armv7-a-neon" />
+  <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" remote="aosp" revision="refs/tags/android-4.4.2_r1" />
 
   <!--Only if you are lazy-->
   
   <!--<remove-project path="external/iproute2" name="CyanogenMod/android_external_iproute2" />-->
   <!--<project path="external/iproute2" name="platform/external/iproute2" remote="aosp" revision="refs/tags/android-4.4.2_r1" groups="pdk" />-->
   
-  <remove-project name="CyanogenMod/android_bootable_recovery" />
-  <project path="bootable/recovery" name="omnirom/android_bootable_recovery" remote="cm" revision="android-4.4"/>
-
   <remove-project name="CyanogenMod/android_frameworks_av" />
-  <project path="frameworks/av" name="zachf714/android_frameworks_av" remote="cm" revision="cm-11.0-qsd8x50" />
+  <project path="frameworks/av" name="zachf714/android_frameworks_av" remote="github" revision="cm-11.0-qsd8x50" />
 
   <remove-project name="CyanogenMod/android_frameworks_native" />
-  <project path="frameworks/native" name="zachf714/android_frameworks_native" remote="cm" revision="cm-11.0-qsd8x50" />
+  <project path="frameworks/native" name="zachf714/android_frameworks_native" remote="github" revision="cm-11.0-qsd8x50" />
 
   <remove-project name="CyanogenMod/android_hardware_qcom_gps" />
   <project path="hardware/qcom/gps-legacy" name="android_hardware_qcom_gps-legacy" remote="ev" revision="kitkat" />
@@ -42,28 +39,27 @@
   <remove-project name="CyanogenMod/android_hardware_ril" />
   <project path="hardware/ril" name="android_hardware_ril" remote="ev" revision="kitkat" />
 
-  <remove-project name="AOKP/vendor_aokp" />
-  <project path="vendor/aokp" name="zachf714/vendor_aokp" remote="cm" revision="aokp-4.4" />
+  <remove-project name="CyanogenMod/android_vendor_cm" />
+  <project path="vendor/cm" name="zachf714/android_vendor_cm" revision="cm-11.0" />
 
-  <remove-project name="AOKP/vendor_htc" />
-  <project name="android_vendor_htc" path="vendor/htc" remote="ev" revision="kitkat" />
 
   <!--Removed Projects-->
-  <remove-project name="platform/packages/apps/Calendar" />
-  <remove-project name="platform/packages/apps/Exchange" />
-  <remove-project name="platform/packages/apps/Music" />
-  <remove-project name="platform/packages/apps/MusicFX" />
-  <remove-project name="platform/packages/apps/Nfc" />
-  <remove-project name="platform/packages/apps/SpeechRecorder" />
-  <remove-project name="AOKP/packages_wallpapers_SwagPapers_v2" />
-  <remove-project name="platform/packages/apps/VideoEditor" />
-  <remove-project name="platform/packages/apps/VoiceDialer" />
-  <remove-project name="platform/packages/wallpapers/Basic" />
-  <remove-project name="platform/packages/wallpapers/Galaxy4" />
-  <remove-project name="platform/packages/wallpapers/HoloSpiral" />
-  <remove-project name="platform/packages/wallpapers/MagicSmoke" />
-  <remove-project name="platform/packages/wallpapers/MusicVisualization" />
-  <remove-project name="platform/packages/wallpapers/NoiseField" />
-  <remove-project name="platform/packages/wallpapers/PhaseBeam" />
+  <remove-project name="CyanogenMod/android_packages_apps_Apollo" />
+  <remove-project name="CyanogenMod/android_packages_apps_Calendar" />
+  <remove-project name="CyanogenMod/android_packages_apps_CMUpdater" />
+  <remove-project name="CyanogenMod/android_packages_apps_CMWallpapers" />
+  <remove-project name="CyanogenMod/android_packages_apps_Exchange" />
+  <remove-project name="CyanogenMod/android_packages_apps_LockClock" />
+  <remove-project name="CyanogenMod/android_packages_apps_Nfc" />
+  <remove-project name="CyanogenMod/android_packages_apps_SpeechRecorder" />
+  <remove-project name="CyanogenMod/android_packages_apps_VideoEditor" />
+  <remove-project name="CyanogenMod/android_packages_apps_VoiceDialer" />
+  <remove-project name="CyanogenMod/android_packages_wallpapers_Basic" />
+  <remove-project name="CyanogenMod/android_packages_wallpapers_Galaxy4" />
+  <remove-project name="CyanogenMod/android_packages_wallpapers_HoloSpiral" />
+  <remove-project name="CyanogenMod/android_packages_wallpapers_MagicSmoke" />
+  <remove-project name="CyanogenMod/android_packages_wallpapers_MusicVisualization" />
+  <remove-project name="CyanogenMod/android_packages_wallpapers_NoiseField" />
+  <remove-project name="CyanogenMod/android_packages_wallpapers_PhaseBeam" />
 
 </manifest>

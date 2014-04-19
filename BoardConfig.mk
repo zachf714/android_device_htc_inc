@@ -83,9 +83,9 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_KERNEL_CONFIG    := incrediblec-incredikernel_defconfig
 # Keep this as a fall back in case of no source
 #TARGET_PREBUILT_KERNEL  := device/htc/inc/prebuilt/root/kernel
-#TARGET_RECOVERY_FSTAB   := device/htc/inc/prebuilt/root/fstab.inc
+TARGET_RECOVERY_FSTAB   := device/htc/inc/prebuilt/root/fstab.inc
 
-#TARGET_RECOVERY_FSTAB   := device/htc/inc/prebuilt/root/fstab.inc
+TARGET_RECOVERY_FSTAB   := device/htc/inc/prebuilt/root/fstab.inc
 
 BOARD_HAS_DATADATA := true
 BOARD_SDCARD_DEVICE_PRIMARY := /dev/block/mmcblk1p1
@@ -98,15 +98,3 @@ BOARD_CACHE_FILESYSTEM := auto
 
 # Make sure vold formats the proper sdcard partition
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
-
-#TWRP
-DEVICE_RESOLUTION := 480x800
-TW_INTERNAL_STORAGE_PATH := "/emmc"
-TW_INTERNAL_STORAGE_MOUNT_POINT := "emmc"
-TW_EXTERNAL_STORAGE_PATH := "/sdcard"
-TW_EXTERNAL_STORAGE_MOUNT_POINT := "sdcard"
-TW_CHARGED_LED_PATH := /sys/class/leds/green/brightness
-TW_CHARGING_LED_PATH := /sys/class/leds/amber/brightness
-TW_MAX_BRIGHTNESS := 255
-TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
-TARGET_RECOVERY_PIXEL_FORMAT := "BGR_565"
