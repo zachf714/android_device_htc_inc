@@ -88,7 +88,7 @@ TARGET_KERNEL_CONFIG    := incrediblec-incredikernel_defconfig
 #TARGET_RECOVERY_FSTAB   := device/htc/inc/prebuilt/root/fstab.inc
 
 #Recovery Kernel
-TARGET_PREBUILT_RECOVERY_KERNEL := device/htc/inc/prebuilt/root/kernel
+TARGET_PREBUILT_RECOVERY_KERNEL := device/htc/inc/recovery/kernel
 
 BOARD_HAS_DATADATA := true
 BOARD_SDCARD_DEVICE_PRIMARY := /dev/block/mmcblk1p1
