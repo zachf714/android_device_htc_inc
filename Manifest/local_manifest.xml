@@ -14,8 +14,9 @@
   <project path="hardware/qcom/audio-legacy" name="android_hardware_qcom_audio-legacy" remote="ev" revision="kitkat" />
   <project path="hardware/qcom/display-legacy" name="android_hardware_qcom_display-legacy" remote="ev" revision="kitkat" />
   <project path="hardware/qcom/media-legacy" name="android_hardware_qcom_media-legacy" remote="ev" revision="kitkat" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.4.3" name="android_prebuilts_gcc_linux-x86_arm_arm-eabi-4.4.3" remote="ev" revision="kitkat" />
   <project name="android_vendor_htc" path="vendor/htc" remote="ev" revision="kitkat" />
+  <project path="prebuilt/linux-x86/toolchain/arm-eabi-4.7.4" name="Mustaavalkosta/android_prebuilts_gcc_linux-x86_arm_arm-eabi-4.7" remote="cm" revision="master" />
+  <!--<project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.4.3" name="android_prebuilts_gcc_linux-x86_arm_arm-eabi-4.4.3" remote="ev" revision="kitkat" />-->
 
   <!--Replaced-->
 
@@ -26,6 +27,9 @@
   
   <!--<remove-project path="external/iproute2" name="CyanogenMod/android_external_iproute2" />-->
   <!--<project path="external/iproute2" name="platform/external/iproute2" remote="aosp" revision="refs/tags/android-4.4.2_r1" groups="pdk" />-->
+
+  <!--<remove-project name="CyanogenMod/android_bootable_recovery" />
+  <project path="bootable/recovery" name="omnirom/android_bootable_recovery" remote="cm" revision="android-4.4"/>-->
   
   <remove-project name="CyanogenMod/android_frameworks_av" />
   <project path="frameworks/av" name="zachf714/android_frameworks_av" remote="github" revision="cm-11.0-qsd8x50" />

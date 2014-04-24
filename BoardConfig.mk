@@ -23,6 +23,7 @@
 # WARNING: This line must come *before* including the proprietary
 # variant, so that it gets overwritten by the parent (which goes
 # against the traditional rules of inheritance).
+
 USE_CAMERA_STUB := false
 
 # inherit from the proprietary version
@@ -34,7 +35,7 @@ include device/htc/qsd8k-common/BoardConfigCommon.mk
 TARGET_KERNEL_SOURCE := kernel/htc/incredikernel
 
 # Use Custom Toolchain
-#KERNEL_TOOLCHAIN_PREFIX:=$(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.4.3/bin/arm-eabi-
+KERNEL_TOOLCHAIN_PREFIX:=$(ANDROID_BUILD_TOP)/prebuilt/linux-x86/toolchain/arm-eabi-4.7.4/bin/arm-eabi-
 
 #Use Half-Res Bootanimation for SystemSpace and Speeds up Boot time
 TARGET_BOOTANIMATION_HALF_RES := true
